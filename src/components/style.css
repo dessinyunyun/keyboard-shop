@@ -1,0 +1,19 @@
+.btn-light {
+  position: absolute;
+  margin: 2px 0 0 2px;
+  padding: 0 3px 0 3px;
+}
+
+.card {
+  position: relative;
+}
+
+.btn-primary {
+  position: absolute;
+  margin: 2px 0 0 2px;
+  padding: 0 3px 0 3px;
+}
+
+.sold-out {
+  opacity: 0.5;
+}
