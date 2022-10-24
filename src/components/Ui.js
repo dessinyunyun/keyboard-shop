@@ -5,7 +5,7 @@ const Ui = ({ data }) => {
   let show;
   if (data.stok === 0) {
     return (show = (
-      <div class="col-sm-3 text-dark mb-3">
+      <div class="col-sm-3 col-6 text-dark mb-3">
         <div class="card h-100">
           <img src={data.gambar} class="card-img-top sold-out" alt="..." />
           <div class="btn-light border border-3">SOLD OUT</div>
@@ -21,7 +21,7 @@ const Ui = ({ data }) => {
     ));
   } else if (data.terjual > 50) {
     return (show = (
-      <div class="col-sm-3 text-dark mb-3">
+      <div class="col-sm-3 col-6 text-dark mb-3">
         <div class="card h-100">
           <img src={data.gambar} class="card-img-top " alt="..." />
           <div class="btn-primary border border-3">Best Seller</div>
@@ -37,7 +37,7 @@ const Ui = ({ data }) => {
     ));
   } else {
     return (show = (
-      <div class="col-sm-3 text-dark mb-3">
+      <div class="col-sm-3 col-6 text-dark mb-3">
         <div class="card h-100">
           <img src={data.gambar} class="card-img-top" alt="..." />
           <div class="card-body">
