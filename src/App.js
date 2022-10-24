@@ -2,7 +2,6 @@ import logo from "./logo.svg";
 import "./App.css";
 import Ui from "./components/DataMapping";
 import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
-import SecondPage from "./components/SecondPage";
 
 function App() {
   return (
@@ -10,18 +9,8 @@ function App() {
       <div className="App">
         <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
-          <ul>
-            <li>
-              <Link to="/">ke utama</Link>
-            </li>
-            <li>
-              <Link to="/sec">ke sec page</Link>
-            </li>
-          </ul>
-          <Routes>
-            <Route path="/" element={<Ui />} />
-            <Route path="/sec" element={<SecondPage />} />
-          </Routes>
+          <h1 className="mb-5">Keyboard Shop</h1>
+          <Ui />
         </header>
       </div>
     </BrowserRouter>
